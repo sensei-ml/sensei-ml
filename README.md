@@ -1,1 +1,3 @@
-<h1>Un título hiper mega épico</h1>
+<h1>Hi 🖖🏻</h1>
+<p>I am a technology and computer science teacher with a passion for Machine Learning. I have experience in developing and applying various ML techniques, such as deep learning ando computer vision. I enjoy sharing my knowledge and skills with my students and colleagues, as well as learning from others. I am always looking for new challenges and opportunities to improve my ML expertise and contribute to the advancement of this exciting field. You can find some of my projects and publications on my GitHub profile. Feel free to contact me if you have any questions or suggestions.
+</p>
