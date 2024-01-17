@@ -18,7 +18,7 @@
 <h4 aling="left">3D = Game engine software</h4>
 <p align="left"> 
   <img src="https://github.com/devicons/devicon/blob/master/icons/blender/blender-original.svg" alt="c" width="40" height="40"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg" width="40" height="40"/>
+  <img src="https://companieslogo.com/img/orig/U-ea48bc1d.png?t=1634728034" width="40"/>
 </p>
 <h4 aling="left">More tecnologies and languages</h4>
 <p align="left"> 
