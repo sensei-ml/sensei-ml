@@ -61,6 +61,7 @@ body {
     display: flex;
     flex: 1;
     overflow-y: scroll;
+    padding-top: 1%;
 }
 
 .social_media_name_column {
@@ -71,10 +72,6 @@ body {
 .subtitle {
     color: white;
 
-}
-
-table {
-    padding-top: 1%;
 }
 
 .title_name {
