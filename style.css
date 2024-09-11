@@ -24,10 +24,6 @@ body {
     padding-top: 5%;
 }
 
-.subtitle {
-    color: white;
-
-}
 .left_side {
     background-color: black;
     overflow: hidden;
@@ -37,6 +33,23 @@ body {
     padding: 2%;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.profile {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 30%;
+}
+
+.profile_section {
+    padding-top: 4%;
+    flex: 1 1 auto;
+}
+
+.profile_picture {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    width: 200px;
 }
 
 .right_side {
@@ -55,21 +68,9 @@ body {
     position: relative;
 }
 
-.profile {
-    display: flex;
-    align-items: flex-start;
-    padding-top: 30%;
-}
+.subtitle {
+    color: white;
 
-.profile_section {
-    padding-top: 4%;
-    flex: 1 1 auto;
-}
-
-.profile_picture {
-    flex: 0 0 auto;
-    margin-right: 20px;
-    width: 200px;
 }
 
 table {
