@@ -1,4 +1,8 @@
 /* Styles */
+.arrow_link {
+    position: absolute;
+}
+
 body {
     background-color: black;
     color: #A1A5A6;
@@ -6,16 +10,24 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: 'SUSE';
+    font-family: 'Mulish';
     scroll-behavior: smooth;
 }
 
-.cv_button {
+.cv_button, .social_media_link {
     font-weight: bold;
-    color: #5FCDD9;
+    color: white;
     text-decoration: None;
 }
 
+.links_section {
+    padding-top: 5%;
+}
+
+.subtitle {
+    color: white;
+
+}
 .left_side {
     background-color: black;
     overflow: hidden;
@@ -38,18 +50,32 @@ body {
     overflow-y: scroll;
 }
 
-.social-icon {
-    font-size: 24px;
-    color: gray;
-    transition: color 0.3s;
-}
-  
-.social-icon:hover {
-    color: white;
+.social_media_name_column {
+    padding-right: 20px;
+    position: relative;
 }
 
-.subtitle,
+.profile {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 30%;
+}
+
+.profile_section {
+    padding-top: 4%;
+    flex: 1 1 auto;
+}
+
+.profile_picture {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    width: 200px;
+}
+
+table {
+    padding-top: 1%;
+}
+
 .title_name {
-    color: #F5F5F5;
-    font-weight: bold;
+    color: white;
 }
