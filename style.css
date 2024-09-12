@@ -55,6 +55,7 @@ body {
 .right_side {
     background-color: black;
     padding: 2%;
+    padding-right: 5%;
 }
 
 .right_side_container {
