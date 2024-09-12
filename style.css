@@ -14,7 +14,7 @@ body {
     scroll-behavior: smooth;
 }
 
-.cv_button, .social_media_link {
+.cv_button, .project_link, .social_media_link {
     font-weight: bold;
     color: white;
     text-decoration: None;
@@ -52,6 +52,10 @@ body {
     width: 200px;
 }
 
+.project_frameworks {
+    font-weight: bold;
+}
+
 .right_side {
     background-color: black;
     padding: 2%;
@@ -77,4 +81,10 @@ body {
 
 .title_name {
     color: white;
+}
+
+.year_project_column {
+    padding-right: 10rem;
+    text-align: left;
+    vertical-align: top;
 }

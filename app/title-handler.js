@@ -1,6 +1,6 @@
 var originalTitle = document.title;
 window.onblur = function() {
-    document.title = "Where are you going?";
+    document.title = "Ey! get back.";
 };
 window.onfocus = function() {
     document.title = originalTitle;
