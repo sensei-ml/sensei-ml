@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="app/title-handler.js"></script>
+    <script src="app/entry_animation.js"></script>
+    <script src="app/chatbot.js"></script>
     <title>Sensei-ml</title>
 </head>
 <body>
-    <header class = "left_side">
+    <header class = "profile_container">
         <article class="profile">
-            <img class = "profile_picture" src = "https://cdn-icons-png.flaticon.com/512/9203/9203764.png">
             <section class = "profile_section">
                 <h1 class="title_name">Michael Leonardo Aguas</h1>
                 <p class="profile_description">IBM AI Engineer and developer certificated. Programming and tech teacher.</p>
@@ -41,55 +42,104 @@
                 </tr>
             </table>
         </section>
+        <hr>
+        <section class ="about_me_container">
+            <header class="about_me">
+                <p class="subtitle">
+                    About me
+                </p>
+                <p>
+                    I am an artificial intelligence engineer and developer with the IBM Professional Certificates and distinguished programming and maths teacher dedicating myself by three (3) years to teaching and learning about the most relevant technologies today, bringing them closer to children and young people in a fun and uncomplicated way.
+                </p>
+                <p>
+                    I got certified in data science and artificial intelligence in the most relevant online learning platforms worldwide such as Coursera and Platzi mastering the most important artificial intelligence frameworks: Tensorflow, PyTorch, Sci-kit learn, Matplotlib, Numpy and Pandas.
+                </p>
+                <p class="subtitle">ML/AI modeling stack</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>TensorFlow</li>
+                    <li>Keras</li>
+                    <li>PyTorch</li>
+                    <li>Scikit-learn</li>
+                    <li>PySpark</li>
+                    <li>Numpy</li>
+                    <li>Pandas</li>
+                    <li>Matplotlib</li>
+                    <li>Pillow</li>
+                    <li>Open CV</li>
+                    <li>NLTK</li>
+                    <li>SpaCy</li>
+                </ul>
+                <p class = "subtitle">ML/MLops deploy stack</p>
+                <ul>
+                    <li>AWS</li>    
+                    <li>Mlflow</li>
+                    <li>Flask</li>
+                    <li>Gradio</li>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>JavaScript</li>
+                </ul>
+                <p class = "subtitle">DB stack</p>
+                <ul>
+                    <li>PostgreSQL</li>
+                    <li>MySql</li>
+                    <li>MongoDB</li>
+                </ul>
+            </header>
+            <hr>
+            <section class = "projects_container">
+                <p class="subtitle">AI/ML Projects</h2>
+                    <table class="project_description">
+                        <tr>
+                            <td class = "description_project_column">
+                                <p>2024</p>
+                                <p class = "subtitle">Computer vision model to classify different samples of different images of structure integrity.</p>
+                                <a href = "https://huggingface.co/spaces/sensei-ml/crack_detection_for_structural_health_monitoring" class = "project_link">View Hugging Face space<span class="arrow_link">→</span></a>
+                                <p class = "project_frameworks">Convolutional Neural Network . PyTorch . Gradio . Hugging Face</p>
+                                <iframe
+                                    src="https://sensei-ml-crack-detection-for-structural-health-a0d41da.hf.space"
+                                    frameborder="0"
+                                    width="600"
+                                    height="450"
+                                ></iframe>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "description_project_column">
+                                <p>2023</p>
+                                <p class = "subtitle">Computer vision model to classify brain tumors.</p>
+                                <a href = "https://huggingface.co/spaces/sensei-ml/Brain_Tumors_Image_Classificator" class = "project_link">View Hugging Face space<span class="arrow_link">→</span></a>
+                                <p class = "project_frameworks">Convolutional Neural Network . TensorFlow . Keras . Gradio . Hugging Face</p>
+                                <iframe
+                                    src="https://sensei-ml-brain-tumors-image-classificator.hf.space"
+                                    frameborder="0"
+                                    width="600"
+                                    height="450"
+                                ></iframe>
+                            </td>
+                        </tr>
+                    </table>
+        </section>
     </header>
-    <section class ="right_side_container">
-        <header class="right_side">
-            <p class="subtitle">
-                About me
-            </p>
-            <p>
-                I am an artificial intelligence engineer and developer with the IBM Professional Certificates and distinguished programming and maths teacher dedicating myself by three (3) years to teaching and learning about the most relevant technologies today, bringing them closer to children and young people in a fun and uncomplicated way.
-            </p>
-            <p>
-                I got certified in data science and artificial intelligence in the most relevant online learning platforms worldwide such as Coursera and Platzi mastering the most important artificial intelligence frameworks: Tensorflow, PyTorch, Sci-kit learn, Matplotlib, Numpy and Pandas.
-            </p>
-            <p class="subtitle">My stack</h2>
-            <ul>
-                <li>Python</li>
-                <li>TensorFlow</li>
-                <li>Keras</li>
-                <li>PyTorch</li>
-                <li>Scikit-learn</li>
-                <li>Flask</li>
-                <li>MySQL</li>
-                <li>Gradio</li>
-                <li>Open CV</li>
-                <li>NLTK</li>
-                <li>SpaCy</li>
-                <li>Html</li>
-                <li>Css</li>
-                <li>JavaScript</li>
-            </ul>
-            <p class="subtitle">Projects</h2>
-                <table class="project_description">
-                    <tr>
-                        <td class = "year_project_column">2024</td>
-                        <td class = "description_project_column">
-                            <a href = "https://huggingface.co/spaces/sensei-ml/crack_detection_for_structural_health_monitoring" class = "project_link">IBM AI Capstone project: Crack detection for structural health monitoring<span class="arrow_link">→</span></a>
-                            <p class = "project_name">Convolutional neural network based on Resnet50 model made in PyTorch to classify samples of different images of structure integrity.</p>
-                            <p class = "project_frameworks">Convolutional Neural Network . PyTorch . Gradio . Hugging Face</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class = "year_project_column">2023</td>
-                        <td class = "description_project_column">
-                            <a href = "https://huggingface.co/spaces/sensei-ml/Brain_Tumors_Image_Classificator" class = "project_link">Brain tumor image MRI classification<span class="arrow_link">→</span></a>
-                            <p class = "project_name">App to classify MRI images of brains to detect three types of tumors or not tumor.</p>
-                            <p class = "project_frameworks">Convolutional Neural Network . Keras . Gradio . Hugging Face</p>
-                        </td>
-                    </tr>
-                </table>
-        </header>
-    </section>
+
+    <div class="chat-container">
+        <button class="chat-button" id="chat-button">🤖</button>
+    
+        <!-- Chat Window -->
+        <div class="chat-window" id="chat-window">
+          <div class="chat-header">
+            <span>Something big is coming...</span>
+            <button class="close-button" id="close-button">✖</button>
+          </div>
+          <div class="chat-body" id="chat-body">
+            <div id="messages"></div>
+          </div>
+          <div class="chat-footer">
+            <input type="text" id="user-input" placeholder="Random placeholder..." />
+            <button id="send-button">??</button>
+          </div>
+        </div>
+      </div>
 </body>
 </html>

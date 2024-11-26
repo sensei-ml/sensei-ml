@@ -1,90 +1,176 @@
-/* Styles */
-.arrow_link {
-    position: absolute;
-}
-
 body {
-    background-color: black;
-    color: #A1A5A6;
-    display: flex;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-family: 'Mulish';
-    scroll-behavior: smooth;
+    color: #D9D9D9;
+    background-color: #0D0D0D;
 }
 
-.cv_button, .project_link, .social_media_link {
-    font-weight: bold;
-    color: white;
-    text-decoration: None;
+hr {
+    width: 600px;
+    size: 2px;
 }
 
-.links_section {
-    padding-top: 5%;
-}
-
-.left_side {
-    background-color: black;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-    flex: 1;
-    padding: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.profile {
-    display: flex;
-    align-items: flex-start;
-    padding-top: 30%;
-}
-
-.profile_section {
-    padding-top: 4%;
-    flex: 1 1 auto;
-}
-
-.profile_picture {
-    flex: 0 0 auto;
-    margin-right: 20px;
-    width: 200px;
-}
-
-.project_frameworks {
-    font-weight: bold;
-}
-
-.right_side {
-    background-color: black;
-    padding: 2%;
-    padding-right: 5%;
-}
-
-.right_side_container {
-    display: flex;
-    flex: 1;
-    overflow-y: scroll;
-    padding-top: 1%;
-}
-
-.social_media_name_column {
-    padding-right: 20px;
-    position: relative;
-}
-
-.subtitle {
-    color: white;
-
+.arrow_link, .cv_button, .social_media_link, .project_link {
+    color: #D9D9D9;
 }
 
 .title_name {
-    color: white;
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size:xx-large;
 }
 
-.year_project_column {
-    padding-right: 10rem;
-    text-align: left;
-    vertical-align: top;
+.subtitle, .cv_button {
+    font-weight: bold;
 }
+
+p, li, span, input, button, .chat-container, .links_section, .cv_button, .project_link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.projects_container{
+    padding-top: 3%;
+}
+
+.social_media_name_column {
+    padding-right: 30px;
+}
+
+.description_project_column {
+    padding-bottom: 10%;
+}
+
+.profile_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centra los elementos verticalmente */
+    align-items: center;      /* Centra los elementos horizontalmente */
+    /* height: 100vh;             Asegura que el contenedor ocupe toda la altura de la pantalla */
+    gap: 20px;                /* Establece el espacio entre las secciones */
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+    /* Animation */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.profile_container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.links_section, .about_me_container {
+    width: 100%;              /* Asegura que la sección de links ocupe todo el ancho disponible */
+    max-width: 600px;         /* Limita el ancho máximo de la sección de links */
+    text-align: left;         /* Alinea el texto de los links a la izquierda */
+}
+  
+.profile_section {
+    width: 100%;              /* Asegura que la sección de perfil ocupe todo el ancho disponible */
+    max-width: 600px;         /* Limita el ancho máximo de la sección de perfil */
+}
+  
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+        .profile_container {
+        padding: 20px;          /* Agrega un poco de espacio alrededor en pantallas pequeñas */
+        align-items: center;    /* Asegura que los elementos sigan centrados */
+    }
+    
+    .links_section {
+        text-align: left;       /* Mantiene el texto de los links alineado a la izquierda */
+        margin-left: 0;         /* Elimina cualquier margen izquierdo adicional en pantallas pequeñas */
+        }
+}
+
+/* Something epic */
+
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .chat-button {
+    background-color: #262626;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-button:hover {
+    background-color: #8C8C8C;
+  }
+  
+  .chat-window {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background-color: #0D0D0D;
+    border: 1px solid #ddd;
+    /*border-radius: 10px;*/
+    display: none;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chat-header {
+    background-color: #262626;
+    color: white;
+    padding: 10px;
+    /*border-top-left-radius: 10px;
+    border-top-right-radius: 10px;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chat-body {
+    padding: 10px;
+    overflow-y: auto;
+    flex: 1;
+  }
+  
+  .chat-footer {
+    display: flex;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chat-footer input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    outline: none;
+  }
+  
+  .chat-footer button {
+    background-color: #262626;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .chat-footer button:hover {
+    background-color: #262626;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
